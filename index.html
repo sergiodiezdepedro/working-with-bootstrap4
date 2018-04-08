@@ -17,7 +17,7 @@
             </header>
         </div>
         <hr>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-md">
                 <p class="lead">
                     <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Enlace</a> a la documentación
@@ -28,55 +28,123 @@
                 </p>
             </div>
         </div>
-        <hr>
-        <div class="row fila-margen-bottom">
-            <div class="columna-margen-derecho sm-1 col-md bg-primary text-white">
+        <div class="row mb-4">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Espaciado</h2>
+            </div>
+        </div>
+        <div class="row col-md mb-5">
+            <p class="lead">
+                Bootstrap dispone de
+                <a href="http://getbootstrap.com/docs/4.0/utilities/spacing/">utilidades de espaciado</a> mediante clases para fijar el
+                <code>padding</code> y el
+                <code>margin</code> de un elemento o conjunto de elementos.
+            </p>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Grid</h2>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="m-3 col-md bg-primary text-white columna-ejemplo">
                 <p>
                     Columna 1
                 </p>
             </div>
-            <div class="columna-margen-derecho sm-1 col-md bg-dark text-white">
+            <div class="m-3 col-md bg-dark text-white columna-ejemplo">
                 <p>
                     Columna 2
                 </p>
             </div>
-            <div class="columna-margen-derecho sm-1 col-md bg-danger text-white">
+            <div class="m-3 col-md bg-danger text-white columna-ejemplo">
                 <p>
                     Columna 3
                 </p>
             </div>
         </div>
-        <div class="row fila-margen-bottom">
-            <div class="columna-margen-derecho sm-1 col-md bg-info text-white">
+        <div class="row mb-5">
+            <div class="m-3 col-md bg-info text-white columna-ejemplo">
                 <p>
                     Columna 4
                 </p>
             </div>
-            <div class="columna-margen-derecho sm-1 col-md bg-warning">
+            <div class="m-3 col-md bg-warning columna-ejemplo">
                 <p>
                     Columna 5
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md">
+        <div class="row mb-4">
+            <div class="col-6 col-sm-3">
+                <p class="lead text-white bg-secondary text-center px-1 py-3 rounded">
+                    col-6 col-sm-3
+                </p>
                 <p class="lead">
-                    Las columnas se separan mediante padding, no con márgenes, por lo que si las mismas tienen un color de fondo se ven pegadas
-                    unas a las otras. Los márgenes que se ven en los ejemplos de arriba son forzados con clases propias,
-                    no de Bootstrap.
+                    <span class="text-danger">2</span> columnas en tamaños hasta small (
+                    <576px). <span class="text-danger">4</span> columnas a partir de ese tamaño.
+                </p>
+            </div>
+            <div class="col-6 col-sm-3">
+                <p class="lead text-white bg-secondary text-center px-1 py-3 rounded">
+                    col-6 col-sm-3
+                </p>
+                <p class="lead">
+                    <span class="text-danger">2</span> columnas en tamaños hasta small (
+                    <576px). <span class="text-danger">4</span> columnas a partir de ese tamaño.
+                </p>
+            </div>
+            <div class="col-6 col-sm-3">
+                <p class="lead text-white bg-secondary text-center px-1 py-3 rounded">
+                    col-6 col-sm-3
+                </p>
+                <p class="lead">
+                    <span class="text-danger">2</span> columnas en tamaños hasta small (
+                    <576px). <span class="text-danger">4</span> columnas a partir de ese tamaño.
+                </p>
+            </div>
+            <div class="col-6 col-sm-3">
+                <p class="lead text-white bg-secondary text-center px-1 py-3 rounded">
+                    col-6 col-sm-3
+                </p>
+                <p class="lead">
+                    <span class="text-danger">2</span> columnas en tamaños hasta small (
+                    <576px). <span class="text-danger">4</span> columnas a partir de ese tamaño.
                 </p>
             </div>
         </div>
-        <hr>
-        <div class="row">
+        <div class="row mb-5">
+            <div class="col-md">
+                <p class="lead">
+                    Las columnas se separan mediante
+                    <code>padding</code>, no con márgenes, por lo que si las mismas tienen un color de fondo se ven pegadas unas
+                    a las otras. Los márgenes que se ven en los dos primeros ejemplos de arriba vienen dados por las utilidades
+                    de espaciado del framework. Esto funciona bien cuando las columnas son iguales. No funciona cuando las
+                    columnas son de ancho diferente y se pretende utilizar el sistema de reparto de las clásicas 12 columnas.
+                    Es decir que si, por ejemplo, hay dos columnas en una fila con el marcado
+                    <code>col-8</code> y
+                    <code>col-4</code> y ambas se separan con márgenes, la segunda cae a una fila siguiente, ya que el ancho rebasa
+                    lo disponible ( 12 + el margen ).
+                </p>
+                <p class="lead">
+                    El tercer ejemplo es una disposición clásica del framework, con separaciones automáticas mediante el padding, y el número
+                    de columnas deseado en función del dispositivo.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Modal</h2>
+            </div>
+        </div>
+        <div class="row mb-5">
             <div class="col-md">
                 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ejemploModal">
                     Lanzar modal
                 </button>
             </div>
         </div>
-        <hr>
-        <div class="row fila-margen-bottom">
+        <div class="row mb-4">
             <div class="col-md">
                 <h2 class="display-5 text-secondary">Tablas</h2>
             </div>
@@ -144,13 +212,13 @@
             </div>
         </div>
         <hr>
-        <div class="row fila-margen-bottom">
+        <div class="row mb-4">
             <div class="col-md">
                 <h2 class="display-5 text-secondary">Formularios</h2>
             </div>
         </div>
         <!-- Formulario -->
-        <div class="row fila-margen-bottom">
+        <div class="row mb-4">
             <div class="col-md">
                 <form>
                     <div class="form-row">
@@ -169,7 +237,7 @@
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Datos adicionales Dirección</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Escalera, Piso, Letra">
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Bloque, Portal, Escalera, Piso, Letra...">
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -204,15 +272,79 @@
                 </form>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-md">
                 <p class="lead">
-                    Los formularios son todo un mundo en Bootstrap 4, por lo que conviene revisar atentamente <a href="http://getbootstrap.com/docs/4.0/components/forms/">la documentación</a>.
+                    Los formularios son todo un mundo en Bootstrap 4, por lo que conviene revisar atentamente
+                    <a href="http://getbootstrap.com/docs/4.0/components/forms/">la documentación</a>.
                 </p>
             </div>
         </div>
-        <hr>
         <!-- Fin Formulario -->
+        <div class="row mb-4">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Cards</h2>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="sm-1 col-md">
+                <div class="card">
+                    <img class="card-img-top" src="http://via.placeholder.com/1920x1080" alt="Imagen en Card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título Card</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptates porro quo commodi nulla
+                            dolore, repellendus vel similique soluta inventore provident velit?</p>
+                        <a href="http://www.google.com" class="btn btn-primary">Ir a Google</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sm-1 col-md">
+                <div class="card">
+                    <img class="card-img-top" src="http://via.placeholder.com/1920x1080/333333/ffffff" alt="Imagen en Card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título Card 2</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque facilis, nihil tempore adipisci
+                            quae ullam?</p>
+                        <a href="http://getbootstrap.com/" class="btn btn-primary">Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md">
+                <p class="lead">
+                    Las
+                    <a href="http://getbootstrap.com/docs/4.0/components/card/">cards</a> no tienen
+                    <code>margin</code> por defecto. Asimismo, tampoco tienen un ancho definido por defecto, por lo que ocupan
+                    completamente el ancho disponible de su elemento padre. Se puede personalizar fácilmente con el siguiente
+                    atributo:
+                    <code>style="width: 18rem"</code>.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Imágenes Responsive</h2>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md mb-4">
+                <img src="img/img-responsive-1.jpeg" alt="Imagen responsive" class="img-fluid rounded">
+            </div>
+            <div class="col-md mb-4">
+                <img src="img/img-responsive-2.jpeg" alt="Imagen responsive" class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md">
+                <p class="lead">
+                    Las imágenes se convierten en
+                    <em>responsive</em> cuando se añade la clase
+                    <code>.img-fluid</code>.
+                </p>
+            </div>
+        </div>
+        <!-- Fin container -->
     </div>
     <!-- Modal -->
     <div class="modal fade" id="ejemploModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

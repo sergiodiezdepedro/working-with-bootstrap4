@@ -6969,21 +6969,10 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
-.columna-margen-derecho {
+.columna-ejemplo {
   padding: 2rem 0;
   text-align: center;
   font-weight: bold;
-  border-radius: 5px;
-  margin-bottom: 1rem; }
-  .columna-margen-derecho p {
+  border-radius: 5px; }
+  .columna-ejemplo p {
     margin-bottom: 0; }
-  @media screen and (min-width: 768px) {
-    .columna-margen-derecho {
-      margin-right: .5rem;
-      margin-bottom: 0; }
-      .columna-margen-derecho:last-child {
-        margin-right: 0; } }
-
-@media screen and (min-width: 768px) {
-  .fila-margen-bottom {
-    margin-bottom: 2rem; } }
