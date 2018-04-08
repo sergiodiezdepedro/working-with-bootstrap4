@@ -1,0 +1,18 @@
+{
+  "name": "working-with-bootstrap4",
+  "version": "1.0.0",
+  "description": "Desarrollo con Bootstrap 4, Sass, browser-sync, Autoprefixer y Purify CSS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergio Díez de Pedro",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-sass": "^4.0.0"
+  }
+}

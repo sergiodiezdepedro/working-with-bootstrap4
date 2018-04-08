@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabajando con Bootstrap 4</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header>
+                <h1 class="display-4 text-primary">Bootstrap 4</h1>
+            </header>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md">
+                <p class="lead">
+                    <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Enlace</a> a la documentación
+                </p>
+                <p class="lead">
+                    Estos párrafos tienen la clase
+                    <code>.lead</code>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row fila-margen-bottom">
+            <div class="columna-margen-derecho sm-1 col-md bg-primary text-white">
+                <p>
+                    Columna 1
+                </p>
+            </div>
+            <div class="columna-margen-derecho sm-1 col-md bg-dark text-white">
+                <p>
+                    Columna 2
+                </p>
+            </div>
+            <div class="columna-margen-derecho sm-1 col-md bg-danger text-white">
+                <p>
+                    Columna 3
+                </p>
+            </div>
+        </div>
+        <div class="row fila-margen-bottom">
+            <div class="columna-margen-derecho sm-1 col-md bg-info text-white">
+                <p>
+                    Columna 4
+                </p>
+            </div>
+            <div class="columna-margen-derecho sm-1 col-md bg-warning">
+                <p>
+                    Columna 5
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <p class="lead">
+                    Las columnas se separan mediante padding, no con márgenes, por lo que si las mismas tienen un color de fondo se ven pegadas
+                    unas a las otras. Los márgenes que se ven en los ejemplos de arriba son forzados con clases propias,
+                    no de Bootstrap.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ejemploModal">
+                    Lanzar modal
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div class="row fila-margen-bottom">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Tablas</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <table class="table table-hover table-responsive-md">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">1</th>
+                            <th scope="col">2</th>
+                            <th scope="col">3</th>
+                            <th scope="col">4</th>
+                            <th scope="col">5</th>
+                            <th scope="col">6</th>
+                            <th scope="col">7</th>
+                            <th scope="col">8</th>
+                            <th scope="col">9</th>
+                            <th scope="col">10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div class="row fila-margen-bottom">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Formularios</h2>
+            </div>
+        </div>
+        <!-- Formulario -->
+        <div class="row fila-margen-bottom">
+            <div class="col-md">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Dirección</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Avenida Principal, 4">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Datos adicionales Dirección</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Escalera, Piso, Letra">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Localidad</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Provincia</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Elija</option>
+                                <option>Provincia 1</option>
+                                <option>Provincia 2</option>
+                                <option>Provincia 3</option>
+                                <option>Provincia 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Código Postal</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Se puede marcar o no
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <p class="lead">
+                    Los formularios son todo un mundo en Bootstrap 4, por lo que conviene revisar atentamente <a href="http://getbootstrap.com/docs/4.0/components/forms/">la documentación</a>.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <!-- Fin Formulario -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="ejemploModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Este es el cuerpo del modal.</p>
+                    <img src="img/img-modal.jpeg" alt="Imagen" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
