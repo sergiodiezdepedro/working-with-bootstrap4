@@ -46,31 +46,31 @@
                 <h2 class="display-5 text-secondary">Grid</h2>
             </div>
         </div>
-        <div class="row mb-5">
-            <div class="m-3 col-md bg-primary text-white columna-ejemplo">
-                <p>
+        <div class="row">
+            <div class="col-md">
+                <p class="bg-primary text-white text-center rounded columna-ejemplo">
                     Columna 1
                 </p>
             </div>
-            <div class="m-3 col-md bg-dark text-white columna-ejemplo">
-                <p>
+            <div class="col-md">
+                <p class="bg-dark text-white text-center rounded columna-ejemplo">
                     Columna 2
                 </p>
             </div>
-            <div class="m-3 col-md bg-danger text-white columna-ejemplo">
-                <p>
+            <div class="col-md">
+                <p class="bg-danger text-white text-center rounded columna-ejemplo">
                     Columna 3
                 </p>
             </div>
         </div>
         <div class="row mb-5">
-            <div class="m-3 col-md bg-info text-white columna-ejemplo">
-                <p>
+            <div class="col-md-8">
+                <p class="bg-info text-white text-center rounded columna-ejemplo">
                     Columna 4
                 </p>
             </div>
-            <div class="m-3 col-md bg-warning columna-ejemplo">
-                <p>
+            <div class="col-md-4">
+                <p class="bg-warning text-center rounded columna-ejemplo">
                     Columna 5
                 </p>
             </div>
@@ -117,18 +117,11 @@
             <div class="col-md">
                 <p class="lead">
                     Las columnas se separan mediante
-                    <code>padding</code>, no con márgenes, por lo que si las mismas tienen un color de fondo se ven pegadas unas
-                    a las otras. Los márgenes que se ven en los dos primeros ejemplos de arriba vienen dados por las utilidades
-                    de espaciado del framework. Esto funciona bien cuando las columnas son iguales. No funciona cuando las
-                    columnas son de ancho diferente y se pretende utilizar el sistema de reparto de las clásicas 12 columnas.
-                    Es decir que si, por ejemplo, hay dos columnas en una fila con el marcado
-                    <code>col-8</code> y
-                    <code>col-4</code> y ambas se separan con márgenes, la segunda cae a una fila siguiente, ya que el ancho rebasa
-                    lo disponible ( 12 + el margen ).
+                    <code>padding</code>, no con márgenes.
                 </p>
                 <p class="lead">
-                    El tercer ejemplo es una disposición clásica del framework, con separaciones automáticas mediante el padding, y el número
-                    de columnas deseado en función del dispositivo.
+                    El tercer ejemplo es una disposición clásica del framework, con separaciones automáticas mediante el
+                    <code>padding</code>, y el número de columnas deseado en función del dispositivo.
                 </p>
             </div>
         </div>
@@ -318,7 +311,8 @@
                     <code>margin</code> por defecto. Asimismo, tampoco tienen un ancho definido por defecto, por lo que ocupan
                     completamente el ancho disponible de su elemento padre. Se puede personalizar fácilmente con el siguiente
                     atributo:
-                    <code>style="width: 18rem"</code>.
+                    <code>style="width: 18rem"</code>. Obviamente, el
+                    <em>18</em> es un ejemplo de una cifra.
                 </p>
             </div>
         </div>
@@ -341,6 +335,73 @@
                     Las imágenes se convierten en
                     <em>responsive</em> cuando se añade la clase
                     <code>.img-fluid</code>.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Figure</h2>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <figure class="figure">
+                    <img src="http://via.placeholder.com/2000x1500/767676/#7698BA" class="figure-img img-fluid rounded" alt="Una imagen comodín con esquinas redondeadas en un figure">
+                    <figcaption class="figure-caption text-right">Pie de foto</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md">
+                <p class="lead">
+                    Las
+                    <a href="http://getbootstrap.com/docs/4.0/content/figures/">figures</a> proporcionan cierto estilo a las etiquetas propias de este elemento HTML. Las imágenes requieren
+                    la clase pertinente para convertirlas en responsive. No tienen un tamaño definido de forma explícita.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Breadcrumb</h2>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Sección 1</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Subsección X</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md">
+                <p class="lead">
+                    Puesto que las
+                    <a href="http://getbootstrap.com/docs/4.0/components/breadcrumb/">migas de pan</a> proporcionan una navegación, es una buena idea añadir una etiqueta descriptiva como
+                    <code>aria-label="breadcrumb"</code> para describir el tipo de navegación que proporciona el elemento
+                    <code>&ltnav&gt</code>, así como aplicar
+                    <code>aria-current="page"</code> al último ítem del conjunto para indicar que señala la página actual.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md">
+                <h2 class="display-5 text-secondary">Tipografía</h2>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md">
+                <p class="lead">
+                    La
+                    <a href="http://getbootstrap.com/docs/4.0/content/typography/">tipografía</a> es un apartado importante en cualquier framework CSS, así como las
+                    <a href="http://getbootstrap.com/docs/4.0/utilities/text/">utilidades</a> para el mismo.
                 </p>
             </div>
         </div>

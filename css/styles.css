@@ -6971,8 +6971,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .columna-ejemplo {
   padding: 2rem 0;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 5px; }
+  font-weight: bold; }
   .columna-ejemplo p {
     margin-bottom: 0; }
