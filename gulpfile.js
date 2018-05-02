@@ -1,5 +1,6 @@
 const gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
+    plumber = require('gulp-plumber'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer');
     purify = require('gulp-purifycss');
@@ -17,6 +18,7 @@ gulp.task('serve', ['sass'], function () {
 
 gulp.task('sass', function () {
     return gulp.src("scss/*.scss")
+        .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 3 versions']
